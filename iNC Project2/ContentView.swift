@@ -20,6 +20,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
         VStack(alignment: .leading) {
+            
             HStack {
                 Text("List of Homework 📚")
                     .font(.system(size: 32, weight: .bold))
@@ -36,6 +37,7 @@ struct ContentView: View {
                     
                 }
             }
+            .padding([.top, .horizontal])
             
         }
         
@@ -102,6 +104,7 @@ struct ContentView: View {
         
     }
 }
+
 #Preview {
     ContentView()
 }
